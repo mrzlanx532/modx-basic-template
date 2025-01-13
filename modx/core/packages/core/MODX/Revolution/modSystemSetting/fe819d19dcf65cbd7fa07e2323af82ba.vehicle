@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '159f61fd15382104d9fc97b67a65840a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'fe819d19dcf65cbd7fa07e2323af82ba',
+  'native_key' => 'package_installer_at_top',
+  'object' => '{"key":"package_installer_at_top","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

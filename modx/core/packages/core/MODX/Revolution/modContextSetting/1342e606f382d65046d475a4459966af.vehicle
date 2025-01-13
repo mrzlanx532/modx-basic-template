@@ -1,0 +1,20 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'context_key',
+    1 => 'key',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'cc04bc30451f5f5e3b3651a2d235765c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContextSetting',
+  'signature' => '1342e606f382d65046d475a4459966af',
+  'native_key' => 
+  array (
+    0 => 'mgr',
+    1 => 'modRequest.class',
+  ),
+  'object' => '{"context_key":"mgr","key":"modRequest.class","value":"MODX\\\\Revolution\\\\modManagerRequest","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

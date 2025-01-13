@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'd34a036d9a1f42e916ad14ff586cae82',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => 'd3e5139caa9fda33b0b573c7c68171a9',
+  'native_key' => 'photo_profile_source',
+  'object' => '{"key":"photo_profile_source","value":null,"xtype":"modx-combo-source","namespace":"core","area":"manager","editedon":null}',
+);

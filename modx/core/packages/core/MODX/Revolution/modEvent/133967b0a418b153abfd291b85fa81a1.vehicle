@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '726d287ff9dcdcaed4e83d3cf2527756',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modEvent',
+  'signature' => '133967b0a418b153abfd291b85fa81a1',
+  'native_key' => 'OnWebPageComplete',
+  'object' => '{"name":"OnWebPageComplete","service":5,"groupname":"System"}',
+);
