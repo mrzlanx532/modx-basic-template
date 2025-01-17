@@ -10,15 +10,11 @@ RUN apt-get update && apt-get install -y \
     libicu-dev \
     unzip \
     bash \
-    ffmpeg \
     git \
     nano \
-    lsb-release \
-    id3v2
+    lsb-release
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-
-RUN pecl install redis && docker-php-ext-enable redis
 
 RUN docker-php-ext-configure intl && \
     docker-php-ext-install \
@@ -48,3 +44,8 @@ ARG LOCAL_LINUX_USER_UID
 RUN useradd -m ${LOCAL_LINUX_USER} --uid=${LOCAL_LINUX_USER_UID}
 
 USER ${LOCAL_LINUX_USER}
+
+RUN cd ~ && git clone https://github.com/modmore/Gitify.git Gitify && cd Gitify && composer install
+
+RUN echo "alias ll='ls -la'" >> ~/.bashrc && \
+    echo "alias gitify='~/Gitify/bin/gitify'" >> ~/.bashrc
