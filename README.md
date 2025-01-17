@@ -10,3 +10,6 @@ c Docker конфигурацией для локальной разработк
 
 # Как запустить процесс установки 
 Перейдите в `http://modx-test.ru/setup`
+
+# Выгрузка БД из докера
+`docker exec -it mysql mysqldump -u root --password=root modx > ./modx.sql`
