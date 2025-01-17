@@ -26,8 +26,8 @@ DROP TABLE IF EXISTS `modx_access_actiondom`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_actiondom` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
@@ -58,12 +58,12 @@ DROP TABLE IF EXISTS `modx_access_category`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_category` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -92,8 +92,8 @@ DROP TABLE IF EXISTS `modx_access_context`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_context` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
@@ -125,12 +125,12 @@ DROP TABLE IF EXISTS `modx_access_elements`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_elements` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -159,12 +159,12 @@ DROP TABLE IF EXISTS `modx_access_media_source`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_media_source` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -193,8 +193,8 @@ DROP TABLE IF EXISTS `modx_access_menus`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_menus` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
@@ -225,12 +225,12 @@ DROP TABLE IF EXISTS `modx_access_namespace`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_namespace` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -260,8 +260,8 @@ DROP TABLE IF EXISTS `modx_access_permissions`;
 CREATE TABLE `modx_access_permissions` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `template` int unsigned NOT NULL DEFAULT '0',
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `value` tinyint unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `template` (`template`),
@@ -288,13 +288,13 @@ DROP TABLE IF EXISTS `modx_access_policies`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_policies` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `parent` int unsigned NOT NULL DEFAULT '0',
   `template` int unsigned NOT NULL DEFAULT '0',
-  `class` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `data` text COLLATE utf8mb4_unicode_ci,
-  `lexicon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'permissions',
+  `class` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `lexicon` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'permissions',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `parent` (`parent`),
@@ -322,8 +322,8 @@ DROP TABLE IF EXISTS `modx_access_policy_template_groups`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_policy_template_groups` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -348,9 +348,9 @@ DROP TABLE IF EXISTS `modx_access_policy_templates`;
 CREATE TABLE `modx_access_policy_templates` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `template_group` int unsigned NOT NULL DEFAULT '0',
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` mediumtext COLLATE utf8mb4_unicode_ci,
-  `lexicon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'permissions',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `lexicon` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'permissions',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -374,12 +374,12 @@ DROP TABLE IF EXISTS `modx_access_resource_groups`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_resource_groups` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`,`target`,`principal`,`authority`),
@@ -408,12 +408,12 @@ DROP TABLE IF EXISTS `modx_access_resources`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_resources` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -442,12 +442,12 @@ DROP TABLE IF EXISTS `modx_access_templatevars`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_access_templatevars` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `target` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `principal_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
+  `target` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `principal_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modPrincipal',
   `principal` int unsigned NOT NULL DEFAULT '0',
   `authority` int unsigned NOT NULL DEFAULT '9999',
   `policy` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `target` (`target`),
   KEY `principal_class` (`principal_class`),
@@ -477,16 +477,16 @@ DROP TABLE IF EXISTS `modx_actiondom`;
 CREATE TABLE `modx_actiondom` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `set` int NOT NULL DEFAULT '0',
-  `action` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `xtype` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `container` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `rule` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `value` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `constraint` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `constraint_field` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `constraint_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `action` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `xtype` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `container` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `rule` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `constraint` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `constraint_field` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `constraint_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `active` tinyint unsigned NOT NULL DEFAULT '1',
   `for_parent` tinyint unsigned NOT NULL DEFAULT '0',
   `rank` int NOT NULL DEFAULT '0',
@@ -519,11 +519,11 @@ DROP TABLE IF EXISTS `modx_actions_fields`;
 CREATE TABLE `modx_actions_fields` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `action` varchar(191) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT '',
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'field',
-  `tab` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `form` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `other` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'field',
+  `tab` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `form` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `other` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `rank` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `action` (`action`),
@@ -551,11 +551,11 @@ DROP TABLE IF EXISTS `modx_active_users`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_active_users` (
   `internalKey` int unsigned NOT NULL DEFAULT '0',
-  `username` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `lasthit` int NOT NULL DEFAULT '0',
   `id` int DEFAULT NULL,
-  `action` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `ip` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `action` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `ip` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`internalKey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -579,7 +579,7 @@ DROP TABLE IF EXISTS `modx_categories`;
 CREATE TABLE `modx_categories` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `parent` int unsigned DEFAULT '0',
-  `category` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `category` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `rank` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `category` (`parent`,`category`),
@@ -630,12 +630,12 @@ DROP TABLE IF EXISTS `modx_content_type`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_content_type` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` tinytext COLLATE utf8mb4_unicode_ci,
-  `mime_type` tinytext COLLATE utf8mb4_unicode_ci,
-  `file_extensions` tinytext COLLATE utf8mb4_unicode_ci,
-  `icon` tinytext COLLATE utf8mb4_unicode_ci,
-  `headers` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `mime_type` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `file_extensions` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `icon` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `headers` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `binary` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
@@ -648,7 +648,7 @@ CREATE TABLE `modx_content_type` (
 
 LOCK TABLES `modx_content_type` WRITE;
 /*!40000 ALTER TABLE `modx_content_type` DISABLE KEYS */;
-INSERT INTO `modx_content_type` VALUES (1,'HTML','HTML content','text/html','.html','',NULL,0),(2,'XML','XML content','text/xml','.xml','icon-xml',NULL,0),(3,'Text','Plain text content','text/plain','.txt','icon-txt',NULL,0),(4,'CSS','CSS content','text/css','.css','icon-css',NULL,0),(5,'JavaScript','JavaScript content','text/javascript','.js','icon-js',NULL,0),(6,'RSS','For RSS feeds','application/rss+xml','.rss','icon-rss',NULL,0),(7,'JSON','JSON','application/json','.json','icon-json',NULL,0),(8,'PDF','PDF Files','application/pdf','.pdf','icon-pdf',NULL,1);
+INSERT INTO `modx_content_type` VALUES (1,'HTML','HTML content','text/html','','','a:0:{}',0),(2,'XML','XML content','text/xml','.xml','icon-xml',NULL,0),(3,'Text','Plain text content','text/plain','.txt','icon-txt',NULL,0),(4,'CSS','CSS content','text/css','.css','icon-css',NULL,0),(5,'JavaScript','JavaScript content','text/javascript','.js','icon-js',NULL,0),(6,'RSS','For RSS feeds','application/rss+xml','.rss','icon-rss',NULL,0),(7,'JSON','JSON','application/json','.json','icon-json',NULL,0),(8,'PDF','PDF Files','application/pdf','.pdf','icon-pdf',NULL,1);
 /*!40000 ALTER TABLE `modx_content_type` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -660,9 +660,9 @@ DROP TABLE IF EXISTS `modx_context`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_context` (
-  `key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` tinytext COLLATE utf8mb4_unicode_ci,
+  `key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `rank` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`key`),
   KEY `name` (`name`),
@@ -688,7 +688,7 @@ DROP TABLE IF EXISTS `modx_context_resource`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_context_resource` (
-  `context_key` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `context_key` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `resource` int unsigned NOT NULL,
   PRIMARY KEY (`context_key`,`resource`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -711,12 +711,12 @@ DROP TABLE IF EXISTS `modx_context_setting`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_context_setting` (
-  `context_key` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `key` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `value` mediumtext COLLATE utf8mb4_unicode_ci,
-  `xtype` varchar(75) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `area` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `context_key` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `key` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `xtype` varchar(75) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `area` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editedon` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`context_key`,`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -741,8 +741,8 @@ DROP TABLE IF EXISTS `modx_dashboard`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_dashboard` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `hide_trees` tinyint unsigned NOT NULL DEFAULT '0',
   `customizable` tinyint unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
@@ -770,15 +770,15 @@ DROP TABLE IF EXISTS `modx_dashboard_widget`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_dashboard_widget` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `content` mediumtext COLLATE utf8mb4_unicode_ci,
-  `properties` text COLLATE utf8mb4_unicode_ci,
-  `namespace` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `lexicon` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core:dashboards',
-  `size` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'half',
-  `permission` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `namespace` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `lexicon` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core:dashboards',
+  `size` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'half',
+  `permission` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `name` (`name`),
   KEY `type` (`type`),
@@ -809,7 +809,7 @@ CREATE TABLE `modx_dashboard_widget_placement` (
   `dashboard` int unsigned NOT NULL DEFAULT '0',
   `widget` int unsigned NOT NULL DEFAULT '0',
   `rank` int unsigned NOT NULL DEFAULT '0',
-  `size` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'half',
+  `size` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'half',
   PRIMARY KEY (`user`,`dashboard`,`widget`),
   KEY `rank` (`rank`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -821,7 +821,7 @@ CREATE TABLE `modx_dashboard_widget_placement` (
 
 LOCK TABLES `modx_dashboard_widget_placement` WRITE;
 /*!40000 ALTER TABLE `modx_dashboard_widget_placement` DISABLE KEYS */;
-INSERT INTO `modx_dashboard_widget_placement` VALUES (0,1,1,2,'one-third'),(0,1,2,3,'one-third'),(0,1,3,5,'one-third'),(0,1,4,6,'two-thirds'),(0,1,5,1,'full'),(0,1,6,0,'full'),(0,1,7,4,'one-third'),(1,1,1,2,'one-third'),(1,1,2,3,'one-third'),(1,1,3,5,'one-third'),(1,1,4,6,'two-thirds'),(1,1,5,1,'full'),(1,1,6,0,'full'),(1,1,7,4,'one-third');
+INSERT INTO `modx_dashboard_widget_placement` VALUES (0,1,1,2,'one-third'),(0,1,2,3,'one-third'),(0,1,3,5,'one-third'),(0,1,4,6,'two-thirds'),(0,1,5,1,'full'),(0,1,6,0,'full'),(0,1,7,4,'one-third'),(1,1,3,5,'one-third'),(1,1,4,6,'two-thirds'),(1,1,5,1,'full'),(1,1,6,0,'full'),(1,1,7,4,'one-third');
 /*!40000 ALTER TABLE `modx_dashboard_widget_placement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -836,8 +836,8 @@ CREATE TABLE `modx_deprecated_call` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `method` int unsigned NOT NULL DEFAULT '0',
   `call_count` int unsigned NOT NULL DEFAULT '0',
-  `caller` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `caller_file` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `caller` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `caller_file` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `caller_line` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `method` (`method`),
@@ -845,7 +845,7 @@ CREATE TABLE `modx_deprecated_call` (
   KEY `caller` (`caller`),
   KEY `caller_file` (`caller_file`),
   KEY `caller_line` (`caller_line`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -854,6 +854,7 @@ CREATE TABLE `modx_deprecated_call` (
 
 LOCK TABLES `modx_deprecated_call` WRITE;
 /*!40000 ALTER TABLE `modx_deprecated_call` DISABLE KEYS */;
+INSERT INTO `modx_deprecated_call` VALUES (1,1,1,'xPDO\\xPDO::newObject','/var/www/html/core/vendor/xpdo/xpdo/src/xPDO/xPDO.php',808),(2,2,1,'xPDO\\xPDO::call','/var/www/html/core/vendor/xpdo/xpdo/src/xPDO/xPDO.php',774),(3,2,1,'MODX\\Revolution\\modAccessibleObject::load','/var/www/html/core/src/Revolution/modAccessibleObject.php',106),(4,3,2,'xPDO\\xPDO::call','/var/www/html/core/vendor/xpdo/xpdo/src/xPDO/xPDO.php',774),(5,3,2,'xPDO\\Om\\xPDOObject::load','/var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php',402);
 /*!40000 ALTER TABLE `modx_deprecated_call` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -866,12 +867,12 @@ DROP TABLE IF EXISTS `modx_deprecated_method`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_deprecated_method` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `definition` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `since` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `recommendation` varchar(1024) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `definition` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `since` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `recommendation` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `definition` (`definition`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -880,6 +881,7 @@ CREATE TABLE `modx_deprecated_method` (
 
 LOCK TABLES `modx_deprecated_method` WRITE;
 /*!40000 ALTER TABLE `modx_deprecated_method` DISABLE KEYS */;
+INSERT INTO `modx_deprecated_method` VALUES (1,'modx.modNamespace','3.0','Replace references to class modx.modNamespace with MODX\\Revolution\\modNamespace to take advantage of PSR-4 autoloading.'),(2,'modNamespace','3.0','Replace references to class modNamespace with MODX\\Revolution\\modNamespace to take advantage of PSR-4 autoloading.'),(3,'modSystemSetting','3.0','Replace references to class modSystemSetting with MODX\\Revolution\\modSystemSetting to take advantage of PSR-4 autoloading.');
 /*!40000 ALTER TABLE `modx_deprecated_method` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -918,7 +920,7 @@ DROP TABLE IF EXISTS `modx_documentgroup_names`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_documentgroup_names` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `private_memgroup` tinyint unsigned NOT NULL DEFAULT '0',
   `private_webgroup` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -944,7 +946,7 @@ DROP TABLE IF EXISTS `modx_element_property_sets`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_element_property_sets` (
   `element` int unsigned NOT NULL DEFAULT '0',
-  `element_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `element_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `property_set` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`element`,`element_class`,`property_set`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -968,12 +970,12 @@ DROP TABLE IF EXISTS `modx_extension_packages`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_extension_packages` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `path` text COLLATE utf8mb4_unicode_ci,
-  `table_prefix` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `service_class` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `service_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `path` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `table_prefix` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `service_class` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `service_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -1000,8 +1002,8 @@ DROP TABLE IF EXISTS `modx_fc_profiles`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_fc_profiles` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '0',
   `rank` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -1053,13 +1055,13 @@ DROP TABLE IF EXISTS `modx_fc_sets`;
 CREATE TABLE `modx_fc_sets` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `profile` int NOT NULL DEFAULT '0',
-  `action` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `action` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '0',
   `template` int NOT NULL DEFAULT '0',
-  `constraint` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `constraint_field` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `constraint_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `constraint` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `constraint_field` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `constraint_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `profile` (`profile`),
   KEY `action` (`action`),
@@ -1086,11 +1088,11 @@ DROP TABLE IF EXISTS `modx_lexicon_entries`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_lexicon_entries` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `value` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `topic` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default',
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `language` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `topic` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'default',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `language` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en',
   `createdon` datetime DEFAULT NULL,
   `editedon` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -1121,12 +1123,12 @@ CREATE TABLE `modx_manager_log` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `user` int unsigned NOT NULL DEFAULT '0',
   `occurred` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `action` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `classKey` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `item` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
+  `action` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `classKey` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `item` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `user_occurred` (`user`,`occurred`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1135,7 +1137,7 @@ CREATE TABLE `modx_manager_log` (
 
 LOCK TABLES `modx_manager_log` WRITE;
 /*!40000 ALTER TABLE `modx_manager_log` DISABLE KEYS */;
-INSERT INTO `modx_manager_log` VALUES (1,1,'2025-01-17 14:15:15','login','MODX\\Revolution\\modContext','mgr');
+INSERT INTO `modx_manager_log` VALUES (1,1,'2025-01-17 14:15:15','login','MODX\\Revolution\\modContext','mgr'),(2,1,'2025-01-17 14:23:25','login','MODX\\Revolution\\modContext','mgr'),(3,1,'2025-01-17 14:25:40','content_type_update','MODX\\Revolution\\modContentType','1'),(4,1,'2025-01-17 14:26:22','user_widget_remove','MODX\\Revolution\\modDashboardWidget','1'),(5,1,'2025-01-17 14:26:24','user_widget_remove','MODX\\Revolution\\modDashboardWidget','2'),(6,1,'2025-01-17 14:27:17','setting_update','MODX\\Revolution\\modSystemSetting','friendly_alias_realtime'),(7,1,'2025-01-17 14:27:44','setting_update','MODX\\Revolution\\modSystemSetting','friendly_alias_translit'),(8,1,'2025-01-17 14:28:05','setting_update','MODX\\Revolution\\modSystemSetting','friendly_urls'),(9,1,'2025-01-17 14:28:07','setting_update','MODX\\Revolution\\modSystemSetting','friendly_urls_strict'),(10,1,'2025-01-17 14:28:12','setting_update','MODX\\Revolution\\modSystemSetting','use_alias_path'),(11,1,'2025-01-17 14:28:14','setting_update','MODX\\Revolution\\modSystemSetting','global_duplicate_uri_check'),(12,1,'2025-01-17 14:28:17','setting_update','MODX\\Revolution\\modSystemSetting','use_frozen_parent_uris'),(13,1,'2025-01-17 14:29:09','resource_create','MODX\\Revolution\\modDocument','2'),(14,1,'2025-01-17 14:29:32','resource_create','MODX\\Revolution\\modDocument','3'),(15,1,'2025-01-17 14:30:19','delete_resource','MODX\\Revolution\\modDocument','3'),(16,1,'2025-01-17 14:30:24','delete_resource','MODX\\Revolution\\modDocument','2'),(17,1,'2025-01-17 14:30:31','empty_trash','MODX\\Revolution\\modResource','2,3'),(18,1,'2025-01-17 14:30:39','resource_create','MODX\\Revolution\\modDocument','4'),(19,1,'2025-01-17 14:30:43','delete_resource','MODX\\Revolution\\modDocument','4'),(20,1,'2025-01-17 14:30:49','empty_trash','MODX\\Revolution\\modResource','4');
 /*!40000 ALTER TABLE `modx_manager_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1148,10 +1150,10 @@ DROP TABLE IF EXISTS `modx_media_sources`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_media_sources` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `class_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\Sources\\modFileMediaSource',
-  `properties` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `class_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\Sources\\modFileMediaSource',
+  `properties` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `is_stream` tinyint unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `name` (`name`),
@@ -1179,7 +1181,7 @@ DROP TABLE IF EXISTS `modx_media_sources_contexts`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_media_sources_contexts` (
   `source` int NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
   PRIMARY KEY (`source`,`context_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1202,9 +1204,9 @@ DROP TABLE IF EXISTS `modx_media_sources_elements`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_media_sources_elements` (
   `source` int unsigned NOT NULL DEFAULT '0',
-  `object_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modTemplateVar',
+  `object_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modTemplateVar',
   `object` int unsigned NOT NULL DEFAULT '0',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
   PRIMARY KEY (`source`,`object`,`object_class`,`context_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1256,8 +1258,8 @@ DROP TABLE IF EXISTS `modx_membergroup_names`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_membergroup_names` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `parent` int unsigned NOT NULL DEFAULT '0',
   `rank` int unsigned NOT NULL DEFAULT '0',
   `dashboard` int unsigned NOT NULL DEFAULT '1',
@@ -1287,16 +1289,16 @@ DROP TABLE IF EXISTS `modx_menus`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_menus` (
-  `text` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `parent` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `action` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `icon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `text` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `parent` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `action` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `icon` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `menuindex` int unsigned NOT NULL DEFAULT '0',
-  `params` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `handler` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `permissions` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `namespace` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `params` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `handler` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `permissions` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `namespace` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
   PRIMARY KEY (`text`),
   KEY `parent` (`parent`),
   KEY `action` (`action`),
@@ -1322,9 +1324,9 @@ DROP TABLE IF EXISTS `modx_namespaces`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_namespaces` (
-  `name` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `path` text COLLATE utf8mb4_unicode_ci,
-  `assets_path` text COLLATE utf8mb4_unicode_ci,
+  `name` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `path` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `assets_path` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1335,7 +1337,7 @@ CREATE TABLE `modx_namespaces` (
 
 LOCK TABLES `modx_namespaces` WRITE;
 /*!40000 ALTER TABLE `modx_namespaces` DISABLE KEYS */;
-INSERT INTO `modx_namespaces` VALUES ('core','{core_path}','{assets_path}');
+INSERT INTO `modx_namespaces` VALUES ('core','{core_path}','{assets_path}'),('translit','{core_path}components/translit/','');
 /*!40000 ALTER TABLE `modx_namespaces` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1348,10 +1350,10 @@ DROP TABLE IF EXISTS `modx_property_set`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_property_set` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `category` int NOT NULL DEFAULT '0',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `properties` text COLLATE utf8mb4_unicode_ci,
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `category` (`category`)
@@ -1376,13 +1378,13 @@ DROP TABLE IF EXISTS `modx_register_messages`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_register_messages` (
   `topic` int unsigned NOT NULL,
-  `id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `valid` datetime NOT NULL,
   `accessed` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `accesses` int unsigned NOT NULL DEFAULT '0',
   `expires` int NOT NULL DEFAULT '0',
-  `payload` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `kill` tinyint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`topic`,`id`),
   KEY `created` (`created`),
@@ -1411,8 +1413,8 @@ DROP TABLE IF EXISTS `modx_register_queues`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_register_queues` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `options` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `options` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1438,14 +1440,14 @@ DROP TABLE IF EXISTS `modx_register_topics`;
 CREATE TABLE `modx_register_topics` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `queue` int unsigned NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-  `options` mediumtext COLLATE utf8mb4_unicode_ci,
+  `options` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `queue` (`queue`),
   KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1454,6 +1456,7 @@ CREATE TABLE `modx_register_topics` (
 
 LOCK TABLES `modx_register_topics` WRITE;
 /*!40000 ALTER TABLE `modx_register_topics` DISABLE KEYS */;
+INSERT INTO `modx_register_topics` VALUES (1,1,'/resource/','2025-01-17 14:29:09',NULL,NULL);
 /*!40000 ALTER TABLE `modx_register_topics` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1465,9 +1468,9 @@ DROP TABLE IF EXISTS `modx_session`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_session` (
-  `id` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `id` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `access` int unsigned NOT NULL,
-  `data` mediumtext COLLATE utf8mb4_unicode_ci,
+  `data` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `access` (`access`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1479,7 +1482,7 @@ CREATE TABLE `modx_session` (
 
 LOCK TABLES `modx_session` WRITE;
 /*!40000 ALTER TABLE `modx_session` DISABLE KEYS */;
-INSERT INTO `modx_session` VALUES ('nm36calh6j3jhhsmdq1cs60iuj',1737123326,'modx.user.contextTokens|a:0:{}manager_language|s:2:\"ru\";modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:32:\"MODX\\Revolution\\modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:38:\"MODX\\Revolution\\modAccessResourceGroup\";a:0:{}s:33:\"MODX\\Revolution\\modAccessCategory\";a:0:{}s:44:\"MODX\\Revolution\\Sources\\modAccessMediaSource\";a:0:{}s:34:\"MODX\\Revolution\\modAccessNamespace\";a:0:{}}}');
+INSERT INTO `modx_session` VALUES ('hd7ddkhevua35qukcf714aa0qf',1737124239,'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}manager_language|s:2:\"ru\";modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:32:\"MODX\\Revolution\\modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:38:\"MODX\\Revolution\\modAccessResourceGroup\";a:0:{}s:33:\"MODX\\Revolution\\modAccessCategory\";a:0:{}s:44:\"MODX\\Revolution\\Sources\\modAccessMediaSource\";a:0:{}s:34:\"MODX\\Revolution\\modAccessNamespace\";a:0:{}}}login_failed|i:1;modx.mgr.user.token|s:52:\"modx678a65dc402672.18181858_1678a67dd15a201.26371384\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.user.1.userGroups|a:1:{i:0;i:1;}newResourceTokens|a:5:{i:0;s:23:\"678a6922cf9915.82364257\";i:1;s:23:\"678a69368eac11.81997361\";i:2;s:23:\"678a694cf34a28.20294001\";i:3;s:23:\"678a6977c9a1a3.49808643\";i:4;s:23:\"678a698f397337.19466670\";}');
 /*!40000 ALTER TABLE `modx_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1492,19 +1495,19 @@ DROP TABLE IF EXISTS `modx_site_content`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_site_content` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'document',
-  `pagetitle` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `longtitle` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `alias` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `link_attributes` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'document',
+  `pagetitle` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `longtitle` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alias` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `link_attributes` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `published` tinyint unsigned NOT NULL DEFAULT '0',
   `pub_date` int NOT NULL DEFAULT '0',
   `unpub_date` int NOT NULL DEFAULT '0',
   `parent` int unsigned NOT NULL DEFAULT '0',
   `isfolder` tinyint unsigned NOT NULL DEFAULT '0',
-  `introtext` text COLLATE utf8mb4_unicode_ci,
-  `content` mediumtext COLLATE utf8mb4_unicode_ci,
+  `introtext` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `content` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `richtext` tinyint unsigned NOT NULL DEFAULT '1',
   `template` int NOT NULL DEFAULT '0',
   `menuindex` int NOT NULL DEFAULT '0',
@@ -1519,17 +1522,17 @@ CREATE TABLE `modx_site_content` (
   `deletedby` int NOT NULL DEFAULT '0',
   `publishedon` int NOT NULL DEFAULT '0',
   `publishedby` int NOT NULL DEFAULT '0',
-  `menutitle` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `menutitle` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `content_dispo` tinyint(1) NOT NULL DEFAULT '0',
   `hidemenu` tinyint unsigned NOT NULL DEFAULT '0',
-  `class_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modDocument',
-  `context_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
+  `class_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modDocument',
+  `context_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'web',
   `content_type` int unsigned NOT NULL DEFAULT '1',
-  `uri` text COLLATE utf8mb4_unicode_ci,
+  `uri` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `uri_override` tinyint(1) NOT NULL DEFAULT '0',
   `hide_children_in_tree` tinyint(1) NOT NULL DEFAULT '0',
   `show_in_tree` tinyint(1) NOT NULL DEFAULT '1',
-  `properties` mediumtext COLLATE utf8mb4_unicode_ci,
+  `properties` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `alias_visible` tinyint unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `alias` (`alias`),
@@ -1551,7 +1554,7 @@ CREATE TABLE `modx_site_content` (
   KEY `show_in_tree` (`show_in_tree`),
   KEY `cache_refresh_idx` (`parent`,`menuindex`,`id`),
   FULLTEXT KEY `content_ft_idx` (`pagetitle`,`longtitle`,`description`,`introtext`,`content`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1560,7 +1563,7 @@ CREATE TABLE `modx_site_content` (
 
 LOCK TABLES `modx_site_content` WRITE;
 /*!40000 ALTER TABLE `modx_site_content` DISABLE KEYS */;
-INSERT INTO `modx_site_content` VALUES (1,'document','Главная','Поздравляем!','','index','',1,0,0,0,0,NULL,'<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website. </p>\n\n<h2>New to&nbsp;MODX?</h2>\n\n<p>Pages on a MODX site are called <a href=\"https://docs.modx.com/3.x/en/building-sites/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\n\n<p>Building your website is done through a combination of <b>Templates</b>, <b>Template Variables</b>, <b>Chunks</b>, <b>Snippets</b> and <b>Plugins</b>. Collectively these are known as <b>Elements</b>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\n\n<p><a href=\"https://docs.modx.com/3.x/en/building-sites/elements/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\n\n<p>With <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\n\n<p>Finally, <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\n\n<p>To learn more about MODX, be sure to check out the <a href=\"https://docs.modx.com/3.x/en/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>\n',1,1,0,1,1,1,1737123302,0,0,0,0,0,0,0,'',0,0,'MODX\\Revolution\\modDocument','web',1,NULL,0,0,1,NULL,1);
+INSERT INTO `modx_site_content` VALUES (1,'document','Главная','Поздравляем!','','index','',1,0,0,0,0,NULL,'<p>You have successfully installed MODX Revolution&nbsp;[[++settings_version]]!</p>\n<p>Now that MODX is installed you can login to the manager to create your templates, manage content and install third party extras to add functionality to your&nbsp;website. </p>\n\n<h2>New to&nbsp;MODX?</h2>\n\n<p>Pages on a MODX site are called <a href=\"https://docs.modx.com/3.x/en/building-sites/resources\">Resources</a>, and are visible on the left-hand side of the manager in the Resources tab. Resources can be nested under other resources, making it easy to create a tree of resources. There are different types of resources for different use&nbsp;cases.</p>\n\n<p>Building your website is done through a combination of <b>Templates</b>, <b>Template Variables</b>, <b>Chunks</b>, <b>Snippets</b> and <b>Plugins</b>. Collectively these are known as <b>Elements</b>, and can also be found in the left-hand side of the manager, in the Elements&nbsp;tab.</p>\n\n<p><a href=\"https://docs.modx.com/3.x/en/building-sites/elements/templates\">Templates</a> contain the outer markup of any page. Each resource can only be assigned to a single template at a time. By adding <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/template-variables\">Template Variables</a> to a template, you can add custom fields for any resource using that particular&nbsp;template.</p>\n\n<p>With <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/chunks\">Chunks</a> you can share parts of the markup, such as a header, across different templates. <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/snippets\">Snippets</a> are pieces of PHP that return dynamic content, such as summaries of other resources or the current date. With snippets, you will often use Chunks to mark up the pieces of content it returns, instead of mixing the PHP and&nbsp;HTML.</p>\n\n<p>Finally, <a href=\"https://docs.modx.com/3.x/en/building-sites/elements/plugins\">Plugins</a> enable more advanced features by hooking into the extensive events system provided by&nbsp;MODX.</p>\n\n<p>To learn more about MODX, be sure to check out the <a href=\"https://docs.modx.com/3.x/en/getting-started\">Getting Started</a> section in the official&nbsp;documentation.</p>\n',1,1,0,1,1,1,1737123302,0,0,0,0,0,0,0,'',0,0,'MODX\\Revolution\\modDocument','web',1,'index',0,0,1,NULL,1);
 /*!40000 ALTER TABLE `modx_site_content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1575,16 +1578,16 @@ CREATE TABLE `modx_site_htmlsnippets` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `source` int unsigned NOT NULL DEFAULT '0',
   `property_preprocess` tinyint unsigned NOT NULL DEFAULT '0',
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Chunk',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Chunk',
   `editor_type` int NOT NULL DEFAULT '0',
   `category` int NOT NULL DEFAULT '0',
   `cache_type` tinyint(1) NOT NULL DEFAULT '0',
-  `snippet` mediumtext COLLATE utf8mb4_unicode_ci,
+  `snippet` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `locked` tinyint unsigned NOT NULL DEFAULT '0',
-  `properties` text COLLATE utf8mb4_unicode_ci,
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `static` tinyint unsigned NOT NULL DEFAULT '0',
-  `static_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `static_file` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `category` (`category`),
@@ -1611,7 +1614,7 @@ DROP TABLE IF EXISTS `modx_site_plugin_events`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_site_plugin_events` (
   `pluginid` int NOT NULL DEFAULT '0',
-  `event` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `event` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `priority` int NOT NULL DEFAULT '0',
   `propertyset` int unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`pluginid`,`event`),
@@ -1639,18 +1642,18 @@ CREATE TABLE `modx_site_plugins` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `source` int unsigned NOT NULL DEFAULT '0',
   `property_preprocess` tinyint unsigned NOT NULL DEFAULT '0',
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editor_type` int NOT NULL DEFAULT '0',
   `category` int NOT NULL DEFAULT '0',
   `cache_type` tinyint(1) NOT NULL DEFAULT '0',
-  `plugincode` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plugincode` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `locked` tinyint unsigned NOT NULL DEFAULT '0',
-  `properties` text COLLATE utf8mb4_unicode_ci,
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `disabled` tinyint unsigned NOT NULL DEFAULT '0',
-  `moduleguid` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `moduleguid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `static` tinyint unsigned NOT NULL DEFAULT '0',
-  `static_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `static_file` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `category` (`category`),
@@ -1680,17 +1683,17 @@ CREATE TABLE `modx_site_snippets` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `source` int unsigned NOT NULL DEFAULT '0',
   `property_preprocess` tinyint unsigned NOT NULL DEFAULT '0',
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editor_type` int NOT NULL DEFAULT '0',
   `category` int NOT NULL DEFAULT '0',
   `cache_type` tinyint(1) NOT NULL DEFAULT '0',
-  `snippet` mediumtext COLLATE utf8mb4_unicode_ci,
+  `snippet` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `locked` tinyint unsigned NOT NULL DEFAULT '0',
-  `properties` text COLLATE utf8mb4_unicode_ci,
-  `moduleguid` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `moduleguid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `static` tinyint unsigned NOT NULL DEFAULT '0',
-  `static_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `static_file` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `category` (`category`),
@@ -1720,18 +1723,18 @@ CREATE TABLE `modx_site_templates` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `source` int unsigned NOT NULL DEFAULT '0',
   `property_preprocess` tinyint unsigned NOT NULL DEFAULT '0',
-  `templatename` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `templatename` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editor_type` int NOT NULL DEFAULT '0',
   `category` int NOT NULL DEFAULT '0',
-  `icon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `icon` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `template_type` int NOT NULL DEFAULT '0',
-  `content` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `locked` tinyint unsigned NOT NULL DEFAULT '0',
-  `properties` text COLLATE utf8mb4_unicode_ci,
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `static` tinyint unsigned NOT NULL DEFAULT '0',
-  `static_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `preview_file` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `static_file` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `preview_file` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `templatename` (`templatename`),
   KEY `category` (`category`),
@@ -1786,7 +1789,7 @@ CREATE TABLE `modx_site_tmplvar_contentvalues` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tmplvarid` int unsigned NOT NULL DEFAULT '0',
   `contentid` int unsigned NOT NULL DEFAULT '0',
-  `value` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `tv_cnt` (`tmplvarid`,`contentid`),
   KEY `tmplvarid` (`tmplvarid`),
@@ -1838,22 +1841,22 @@ CREATE TABLE `modx_site_tmplvars` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `source` int unsigned NOT NULL DEFAULT '0',
   `property_preprocess` tinyint unsigned NOT NULL DEFAULT '0',
-  `type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `caption` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `caption` varchar(80) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editor_type` int NOT NULL DEFAULT '0',
   `category` int NOT NULL DEFAULT '0',
   `locked` tinyint unsigned NOT NULL DEFAULT '0',
-  `elements` text COLLATE utf8mb4_unicode_ci,
+  `elements` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `rank` int NOT NULL DEFAULT '0',
-  `display` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `default_text` mediumtext COLLATE utf8mb4_unicode_ci,
-  `properties` text COLLATE utf8mb4_unicode_ci,
-  `input_properties` text COLLATE utf8mb4_unicode_ci,
-  `output_properties` text COLLATE utf8mb4_unicode_ci,
+  `display` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `default_text` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `input_properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `output_properties` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `static` tinyint unsigned NOT NULL DEFAULT '0',
-  `static_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `static_file` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `category` (`category`),
@@ -1880,9 +1883,9 @@ DROP TABLE IF EXISTS `modx_system_eventnames`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_system_eventnames` (
-  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `service` tinyint unsigned NOT NULL DEFAULT '0',
-  `groupname` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `groupname` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -1905,11 +1908,11 @@ DROP TABLE IF EXISTS `modx_system_settings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_system_settings` (
-  `key` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `value` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `xtype` varchar(75) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `area` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `key` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `xtype` varchar(75) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `area` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editedon` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1921,7 +1924,7 @@ CREATE TABLE `modx_system_settings` (
 
 LOCK TABLES `modx_system_settings` WRITE;
 /*!40000 ALTER TABLE `modx_system_settings` DISABLE KEYS */;
-INSERT INTO `modx_system_settings` VALUES ('access_category_enabled','1','combo-boolean','core','authentication',NULL),('access_context_enabled','1','combo-boolean','core','authentication',NULL),('access_resource_group_enabled','1','combo-boolean','core','authentication',NULL),('allow_forward_across_contexts','','combo-boolean','core','system',NULL),('allow_manager_login_forgot_password','1','combo-boolean','core','authentication',NULL),('allow_multiple_emails','1','combo-boolean','core','authentication',NULL),('allow_tags_in_post','','combo-boolean','core','system',NULL),('anonymous_sessions','1','combo-boolean','core','session',NULL),('archive_with','','combo-boolean','core','system',NULL),('auto_check_pkg_updates','1','combo-boolean','core','system',NULL),('auto_check_pkg_updates_cache_expire','15','numberfield','core','system',NULL),('auto_isfolder','1','combo-boolean','core','site',NULL),('auto_menuindex','1','combo-boolean','core','site',NULL),('automatic_alias','1','combo-boolean','core','furls',NULL),('automatic_template_assignment','sibling','textfield','core','site',NULL),('base_help_url','//docs.modx.com/help/','textfield','core','manager',NULL),('blocked_minutes','60','numberfield','core','authentication',NULL),('cache_alias_map','1','combo-boolean','core','caching',NULL),('cache_context_settings','1','combo-boolean','core','caching',NULL),('cache_db','','combo-boolean','core','caching',NULL),('cache_db_expires','0','numberfield','core','caching',NULL),('cache_db_session','','combo-boolean','core','caching',NULL),('cache_db_session_lifetime','','numberfield','core','caching',NULL),('cache_default','1','combo-boolean','core','caching',NULL),('cache_expires','0','numberfield','core','caching',NULL),('cache_format','0','numberfield','core','caching',NULL),('cache_handler','xPDO\\Cache\\xPDOFileCache','textfield','core','caching',NULL),('cache_lang_js','1','combo-boolean','core','caching',NULL),('cache_lexicon_topics','1','combo-boolean','core','caching',NULL),('cache_noncore_lexicon_topics','1','combo-boolean','core','caching',NULL),('cache_resource','1','combo-boolean','core','caching',NULL),('cache_resource_clear_partial','','combo-boolean','core','caching',NULL),('cache_resource_expires','0','numberfield','core','caching',NULL),('cache_scripts','1','combo-boolean','core','caching',NULL),('clear_cache_refresh_trees','','combo-boolean','core','caching',NULL),('compress_css','1','combo-boolean','core','manager',NULL),('compress_js','1','combo-boolean','core','manager',NULL),('confirm_navigation','1','combo-boolean','core','manager',NULL),('container_suffix','/','textfield','core','furls',NULL),('context_tree_sort','1','combo-boolean','core','manager',NULL),('context_tree_sortby','rank','textfield','core','manager',NULL),('context_tree_sortdir','ASC','textfield','core','manager',NULL),('cultureKey','ru','modx-combo-language','core','language','2025-01-17 14:15:02'),('date_timezone','','textfield','core','system',NULL),('debug','','numberfield','core','system',NULL),('default_content_type','1','modx-combo-content-type','core','site',NULL),('default_context','web','modx-combo-context','core','site',NULL),('default_duplicate_publish_option','preserve','textfield','core','manager',NULL),('default_media_source','1','modx-combo-source','core','manager',NULL),('default_media_source_type','MODX\\Revolution\\Sources\\modFileMediaSource','modx-combo-source-type','core','manager',NULL),('default_per_page','20','textfield','core','manager',NULL),('default_template','1','modx-combo-template','core','site',NULL),('default_username','(anonymous)','textfield','core','session',NULL),('emailsender','denis_danilov_97@mail.ru','textfield','core','authentication','2025-01-17 14:15:02'),('enable_dragdrop','1','combo-boolean','core','manager',NULL),('enable_gravatar','','combo-boolean','core','manager',NULL),('enable_template_picker_in_tree','1','combo-boolean','core','manager',NULL),('error_log_filename','error.log','textfield','core','system',NULL),('error_log_filepath','','textfield','core','system',NULL),('error_page','1','numberfield','core','site',NULL),('failed_login_attempts','5','numberfield','core','authentication',NULL),('feed_modx_news','https://feeds.feedburner.com/modx-announce','textfield','core','system',NULL),('feed_modx_news_enabled','1','combo-boolean','core','system',NULL),('feed_modx_security','https://forums.modx.com/board.xml?board=294','textfield','core','system',NULL),('feed_modx_security_enabled','1','combo-boolean','core','system',NULL),('form_customization_use_all_groups','','combo-boolean','core','manager',NULL),('forward_merge_excludes','type,published,class_key','textfield','core','system',NULL),('friendly_alias_lowercase_only','1','combo-boolean','core','furls',NULL),('friendly_alias_max_length','0','numberfield','core','furls',NULL),('friendly_alias_realtime','','combo-boolean','core','furls',NULL),('friendly_alias_restrict_chars','pattern','textfield','core','furls',NULL),('friendly_alias_restrict_chars_pattern','/[\\0\\x0B\\t\\n\\r\\f\\a&=+%#<>\"~:`@\\?\\[\\]\\{\\}\\|\\^\'\\\\]/','textfield','core','furls',NULL),('friendly_alias_strip_element_tags','1','combo-boolean','core','furls',NULL),('friendly_alias_translit','none','textfield','core','furls',NULL),('friendly_alias_translit_class','translit.modTransliterate','textfield','core','furls',NULL),('friendly_alias_translit_class_path','{core_path}components/','textfield','core','furls',NULL),('friendly_alias_trim_chars','/.-_','textfield','core','furls',NULL),('friendly_alias_word_delimiter','-','textfield','core','furls',NULL),('friendly_alias_word_delimiters','-_','textfield','core','furls',NULL),('friendly_urls','','combo-boolean','core','furls',NULL),('friendly_urls_strict','','combo-boolean','core','furls',NULL),('global_duplicate_uri_check','','combo-boolean','core','furls',NULL),('hidemenu_default','','combo-boolean','core','site',NULL),('inline_help','1','combo-boolean','core','manager',NULL),('link_tag_scheme','-1','textfield','core','site',NULL),('locale','','textfield','core','language',NULL),('lock_ttl','360','numberfield','core','system',NULL),('log_deprecated','1','combo-boolean','core','system',NULL),('log_level','1','numberfield','core','system',NULL),('log_snippet_not_found','1','combo-boolean','core','site',NULL),('log_target','FILE','textfield','core','system',NULL),('login_background_image','','textfield','core','authentication',NULL),('login_help_button','','combo-boolean','core','authentication',NULL),('login_logo','','textfield','core','authentication',NULL),('mail_charset','UTF-8','modx-combo-charset','core','mail',NULL),('mail_dkim_domain','','textfield','core','mail',NULL),('mail_dkim_identity','','textfield','core','mail',NULL),('mail_dkim_passphrase','','text-password','core','mail',NULL),('mail_dkim_privatekeyfile','','textfield','core','mail',NULL),('mail_dkim_privatekeystring','','textfield','core','mail',NULL),('mail_dkim_selector','','textfield','core','mail',NULL),('mail_encoding','8bit','textfield','core','mail',NULL),('mail_smtp_auth','','combo-boolean','core','mail',NULL),('mail_smtp_autotls','1','combo-boolean','core','mail',NULL),('mail_smtp_helo','','textfield','core','mail',NULL),('mail_smtp_hosts','localhost','textfield','core','mail',NULL),('mail_smtp_keepalive','','combo-boolean','core','mail',NULL),('mail_smtp_pass','','text-password','core','mail',NULL),('mail_smtp_port','587','numberfield','core','mail',NULL),('mail_smtp_secure','','textfield','core','mail',NULL),('mail_smtp_single_to','','combo-boolean','core','mail',NULL),('mail_smtp_timeout','10','numberfield','core','mail',NULL),('mail_smtp_user','','textfield','core','mail',NULL),('mail_use_smtp','','combo-boolean','core','mail',NULL),('main_nav_parent','topnav','textfield','core','manager',NULL),('manager_date_format','Y-m-d','textfield','core','manager',NULL),('manager_datetime_empty_value','—','textfield','core','manager',NULL),('manager_datetime_separator',', ','textfield','core','manager',NULL),('manager_direction','ltr','textfield','core','language',NULL),('manager_favicon_url','favicon.ico','textfield','core','manager',NULL),('manager_login_url_alternate','','textfield','core','authentication',NULL),('manager_logo','','textfield','core','manager',NULL),('manager_theme','default','modx-combo-manager-theme','core','manager',NULL),('manager_time_format','H:i','textfield','core','manager',NULL),('manager_tooltip_delay','2300','numberfield','core','manager',NULL),('manager_tooltip_enable','1','combo-boolean','core','manager',NULL),('manager_use_fullname','','combo-boolean','core','manager',NULL),('manager_week_start','0','numberfield','core','manager',NULL),('mgr_source_icon','icon-folder-open-o','textfield','core','manager',NULL),('mgr_tree_icon_context','tree-context','textfield','core','manager',NULL),('modx_browser_default_sort','name','textfield','core','manager',NULL),('modx_browser_default_viewmode','grid','textfield','core','manager',NULL),('modx_browser_tree_hide_files','1','combo-boolean','core','manager',NULL),('modx_browser_tree_hide_tooltips','1','combo-boolean','core','manager',NULL),('modx_charset','UTF-8','modx-combo-charset','core','language',NULL),('package_installer_at_top','1','combo-boolean','core','manager',NULL),('parser_recurse_uncacheable','1','combo-boolean','core','system',NULL),('password_generated_length','10','numberfield','core','authentication',NULL),('password_min_length','8','numberfield','core','authentication',NULL),('passwordless_activated','','combo-boolean','core','authentication',NULL),('passwordless_expiration','3600','textfield','core','authentication',NULL),('phpthumb_allow_src_above_docroot','','combo-boolean','core','phpthumb',NULL),('phpthumb_cache_maxage','30','numberfield','core','phpthumb',NULL),('phpthumb_cache_maxfiles','10000','numberfield','core','phpthumb',NULL),('phpthumb_cache_maxsize','100','numberfield','core','phpthumb',NULL),('phpthumb_cache_source_enabled','','combo-boolean','core','phpthumb',NULL),('phpthumb_document_root','','textfield','core','phpthumb',NULL),('phpthumb_error_bgcolor','CCCCFF','textfield','core','phpthumb',NULL),('phpthumb_error_fontsize','1','numberfield','core','phpthumb',NULL),('phpthumb_error_textcolor','FF0000','textfield','core','phpthumb',NULL),('phpthumb_far','C','textfield','core','phpthumb',NULL),('phpthumb_imagemagick_path','','textfield','core','phpthumb',NULL),('phpthumb_nohotlink_enabled','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nohotlink_erase_image','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nohotlink_text_message','Off-server thumbnailing is not allowed','textfield','core','phpthumb',NULL),('phpthumb_nohotlink_valid_domains','{http_host}','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_enabled','','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_erase_image','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_require_refer','','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_text_message','Off-server linking is not allowed','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_valid_domains','{http_host}','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_watermark_src','','textfield','core','phpthumb',NULL),('phpthumb_zoomcrop','0','textfield','core','phpthumb',NULL),('preserve_menuindex','','combo-boolean','core','manager',NULL),('principal_targets','MODX\\Revolution\\modAccessContext,MODX\\Revolution\\modAccessResourceGroup,MODX\\Revolution\\modAccessCategory,MODX\\Revolution\\Sources\\modAccessMediaSource,MODX\\Revolution\\modAccessNamespace','textfield','core','authentication',NULL),('proxy_auth_type','BASIC','textfield','core','proxy',NULL),('proxy_host','','textfield','core','proxy',NULL),('proxy_password','','text-password','core','proxy',NULL),('proxy_port','','numberfield','core','proxy',NULL),('proxy_username','','textfield','core','proxy',NULL),('publish_default','','combo-boolean','core','site',NULL),('quick_search_in_content','1','combo-boolean','core','manager',NULL),('quick_search_result_max','10','numberfield','core','manager',NULL),('request_controller','index.php','textfield','core','gateway',NULL),('request_method_strict','','combo-boolean','core','gateway',NULL),('request_param_alias','q','textfield','core','gateway',NULL),('request_param_id','id','textfield','core','gateway',NULL),('resource_static_allow_absolute','0','combo-boolean','core','static_resources',NULL),('resource_static_path','{assets_path}','textfield','core','static_resources',NULL),('resource_tree_node_name','pagetitle','textfield','core','manager',NULL),('resource_tree_node_name_fallback','alias','textfield','core','manager',NULL),('resource_tree_node_tooltip','','textfield','core','manager',NULL),('richtext_default','1','combo-boolean','core','manager',NULL),('search_default','1','combo-boolean','core','site',NULL),('send_poweredby_header','1','combo-boolean','core','system','2025-01-17 14:15:02'),('server_offset_time','0','numberfield','core','system',NULL),('session_cookie_domain','','textfield','core','session',NULL),('session_cookie_httponly','1','combo-boolean','core','session',NULL),('session_cookie_lifetime','604800','numberfield','core','session',NULL),('session_cookie_path','','textfield','core','session',NULL),('session_cookie_samesite','','textfield','core','session',NULL),('session_cookie_secure','','combo-boolean','core','session',NULL),('session_gc_maxlifetime','604800','textfield','core','session',NULL),('session_handler_class','MODX\\Revolution\\modSessionHandler','textfield','core','session',NULL),('session_name','','textfield','core','session',NULL),('set_header','1','combo-boolean','core','system',NULL),('settings_distro','traditional','textfield','core','system',NULL),('settings_version','3.1.0-pl','textfield','core','system',NULL),('show_tv_categories_header','1','combo-boolean','core','manager',NULL),('site_name','MODX Revolution','textfield','core','site',NULL),('site_start','1','numberfield','core','site',NULL),('site_status','1','combo-boolean','core','site',NULL),('site_unavailable_message','[[%site_unavailable_message]]','textfield','core','site',NULL),('site_unavailable_page','0','numberfield','core','site',NULL),('static_elements_automate_chunks','','combo-boolean','core','static_elements',NULL),('static_elements_automate_plugins','','combo-boolean','core','static_elements',NULL),('static_elements_automate_snippets','','combo-boolean','core','static_elements',NULL),('static_elements_automate_templates','','combo-boolean','core','static_elements',NULL),('static_elements_automate_tvs','','combo-boolean','core','static_elements',NULL),('static_elements_basepath','','textfield','core','static_elements',NULL),('static_elements_default_category','0','modx-combo-category','core','static_elements',NULL),('static_elements_default_mediasource','0','modx-combo-source','core','static_elements',NULL),('static_elements_html_extension','.tpl','textfield','core','static_elements',NULL),('symlink_merge_fields','1','combo-boolean','core','site',NULL),('syncsite_default','1','combo-boolean','core','caching',NULL),('topmenu_show_descriptions','1','combo-boolean','core','manager',NULL),('tree_default_sort','menuindex','textfield','core','manager',NULL),('tree_root_id','0','numberfield','core','manager',NULL),('tvs_below_content','','combo-boolean','core','manager',NULL),('unauthorized_page','1','numberfield','core','site',NULL),('upload_file_exists','1','combo-boolean','core','file',NULL),('upload_files','aac,au,avi,bmp,css,css.map,doc,docx,eot,gif,gz,htm,html,ico,jpeg,jpg,js,js.map,less,md,mp3,mp4,mpeg,mpg,odb,odf,odg,odp,ods,odt,pdf,png,ppt,pptx,psd,rar,scss,svg,svgz,tar,tgz,tiff,ttf,txt,wav,webp,wmv,woff,woff2,xls,xlsx,xml,z,zip','textfield','core','file',NULL),('upload_maxsize','52428800','numberfield','core','file','2025-01-17 14:15:02'),('upload_translit','1','combo-boolean','core','file',NULL),('upload_translit_restrict_chars_pattern','/[\\0\\x0B\\t\\n\\r\\f\\a&=+%#<>\"~:`@\\?\\[\\]\\{\\}\\|\\^\'\\\\]/','textfield','core','file',NULL),('use_alias_path','','combo-boolean','core','furls',NULL),('use_context_resource_table','1','combo-boolean','core','caching',NULL),('use_editor','1','combo-boolean','core','editor',NULL),('use_frozen_parent_uris','','combo-boolean','core','furls',NULL),('use_multibyte','1','combo-boolean','core','language','2025-01-17 14:15:02'),('use_weblink_target','','combo-boolean','core','site',NULL),('user_nav_parent','usernav','textfield','core','manager',NULL),('welcome_action','welcome','textfield','core','manager',NULL),('welcome_namespace','core','textfield','core','manager',NULL),('welcome_screen','','combo-boolean','core','manager','2025-01-17 14:15:15'),('welcome_screen_url','//misc.modx.com/revolution/welcome.31.html','textfield','core','manager',NULL),('which_editor','','modx-combo-rte','core','editor',NULL),('which_element_editor','','modx-combo-rte','core','editor',NULL),('xhtml_urls','1','combo-boolean','core','site',NULL);
+INSERT INTO `modx_system_settings` VALUES ('access_category_enabled','1','combo-boolean','core','authentication',NULL),('access_context_enabled','1','combo-boolean','core','authentication',NULL),('access_resource_group_enabled','1','combo-boolean','core','authentication',NULL),('allow_forward_across_contexts','','combo-boolean','core','system',NULL),('allow_manager_login_forgot_password','1','combo-boolean','core','authentication',NULL),('allow_multiple_emails','1','combo-boolean','core','authentication',NULL),('allow_tags_in_post','','combo-boolean','core','system',NULL),('anonymous_sessions','1','combo-boolean','core','session',NULL),('archive_with','','combo-boolean','core','system',NULL),('auto_check_pkg_updates','1','combo-boolean','core','system',NULL),('auto_check_pkg_updates_cache_expire','15','numberfield','core','system',NULL),('auto_isfolder','1','combo-boolean','core','site',NULL),('auto_menuindex','1','combo-boolean','core','site',NULL),('automatic_alias','1','combo-boolean','core','furls',NULL),('automatic_template_assignment','sibling','textfield','core','site',NULL),('base_help_url','//docs.modx.com/help/','textfield','core','manager',NULL),('blocked_minutes','60','numberfield','core','authentication',NULL),('cache_alias_map','1','combo-boolean','core','caching',NULL),('cache_context_settings','1','combo-boolean','core','caching',NULL),('cache_db','','combo-boolean','core','caching',NULL),('cache_db_expires','0','numberfield','core','caching',NULL),('cache_db_session','','combo-boolean','core','caching',NULL),('cache_db_session_lifetime','','numberfield','core','caching',NULL),('cache_default','1','combo-boolean','core','caching',NULL),('cache_expires','0','numberfield','core','caching',NULL),('cache_format','0','numberfield','core','caching',NULL),('cache_handler','xPDO\\Cache\\xPDOFileCache','textfield','core','caching',NULL),('cache_lang_js','1','combo-boolean','core','caching',NULL),('cache_lexicon_topics','1','combo-boolean','core','caching',NULL),('cache_noncore_lexicon_topics','1','combo-boolean','core','caching',NULL),('cache_resource','1','combo-boolean','core','caching',NULL),('cache_resource_clear_partial','','combo-boolean','core','caching',NULL),('cache_resource_expires','0','numberfield','core','caching',NULL),('cache_scripts','1','combo-boolean','core','caching',NULL),('clear_cache_refresh_trees','','combo-boolean','core','caching',NULL),('compress_css','1','combo-boolean','core','manager',NULL),('compress_js','1','combo-boolean','core','manager',NULL),('confirm_navigation','1','combo-boolean','core','manager',NULL),('container_suffix','/','textfield','core','furls',NULL),('context_tree_sort','1','combo-boolean','core','manager',NULL),('context_tree_sortby','rank','textfield','core','manager',NULL),('context_tree_sortdir','ASC','textfield','core','manager',NULL),('cultureKey','ru','modx-combo-language','core','language','2025-01-17 14:15:02'),('date_timezone','','textfield','core','system',NULL),('debug','','numberfield','core','system',NULL),('default_content_type','1','modx-combo-content-type','core','site',NULL),('default_context','web','modx-combo-context','core','site',NULL),('default_duplicate_publish_option','preserve','textfield','core','manager',NULL),('default_media_source','1','modx-combo-source','core','manager',NULL),('default_media_source_type','MODX\\Revolution\\Sources\\modFileMediaSource','modx-combo-source-type','core','manager',NULL),('default_per_page','20','textfield','core','manager',NULL),('default_template','1','modx-combo-template','core','site',NULL),('default_username','(anonymous)','textfield','core','session',NULL),('emailsender','denis_danilov_97@mail.ru','textfield','core','authentication','2025-01-17 14:15:02'),('enable_dragdrop','1','combo-boolean','core','manager',NULL),('enable_gravatar','','combo-boolean','core','manager',NULL),('enable_template_picker_in_tree','1','combo-boolean','core','manager',NULL),('error_log_filename','error.log','textfield','core','system',NULL),('error_log_filepath','','textfield','core','system',NULL),('error_page','1','numberfield','core','site',NULL),('failed_login_attempts','5','numberfield','core','authentication',NULL),('feed_modx_news','https://feeds.feedburner.com/modx-announce','textfield','core','system',NULL),('feed_modx_news_enabled','1','combo-boolean','core','system',NULL),('feed_modx_security','https://forums.modx.com/board.xml?board=294','textfield','core','system',NULL),('feed_modx_security_enabled','1','combo-boolean','core','system',NULL),('form_customization_use_all_groups','','combo-boolean','core','manager',NULL),('forward_merge_excludes','type,published,class_key','textfield','core','system',NULL),('friendly_alias_lowercase_only','1','combo-boolean','core','furls',NULL),('friendly_alias_max_length','0','numberfield','core','furls',NULL),('friendly_alias_realtime','1','combo-boolean','core','furls','2025-01-17 14:27:17'),('friendly_alias_restrict_chars','pattern','textfield','core','furls',NULL),('friendly_alias_restrict_chars_pattern','/[\\0\\x0B\\t\\n\\r\\f\\a&=+%#<>\"~:`@\\?\\[\\]\\{\\}\\|\\^\'\\\\]/','textfield','core','furls',NULL),('friendly_alias_strip_element_tags','1','combo-boolean','core','furls',NULL),('friendly_alias_translit','russian','textfield','core','furls','2025-01-17 14:27:44'),('friendly_alias_translit_class','modx.translit.modTransliterate','textfield','core','furls','2025-01-17 14:29:24'),('friendly_alias_translit_class_path','{core_path}components/translit/model/','textfield','core','furls','2025-01-17 14:29:24'),('friendly_alias_trim_chars','/.-_','textfield','core','furls',NULL),('friendly_alias_word_delimiter','-','textfield','core','furls',NULL),('friendly_alias_word_delimiters','-_','textfield','core','furls',NULL),('friendly_urls','1','combo-boolean','core','furls','2025-01-17 14:28:05'),('friendly_urls_strict','1','combo-boolean','core','furls','2025-01-17 14:28:07'),('global_duplicate_uri_check','1','combo-boolean','core','furls','2025-01-17 14:28:14'),('hidemenu_default','','combo-boolean','core','site',NULL),('inline_help','1','combo-boolean','core','manager',NULL),('link_tag_scheme','-1','textfield','core','site',NULL),('locale','','textfield','core','language',NULL),('lock_ttl','360','numberfield','core','system',NULL),('log_deprecated','1','combo-boolean','core','system',NULL),('log_level','1','numberfield','core','system',NULL),('log_snippet_not_found','1','combo-boolean','core','site',NULL),('log_target','FILE','textfield','core','system',NULL),('login_background_image','','textfield','core','authentication',NULL),('login_help_button','','combo-boolean','core','authentication',NULL),('login_logo','','textfield','core','authentication',NULL),('mail_charset','UTF-8','modx-combo-charset','core','mail',NULL),('mail_dkim_domain','','textfield','core','mail',NULL),('mail_dkim_identity','','textfield','core','mail',NULL),('mail_dkim_passphrase','','text-password','core','mail',NULL),('mail_dkim_privatekeyfile','','textfield','core','mail',NULL),('mail_dkim_privatekeystring','','textfield','core','mail',NULL),('mail_dkim_selector','','textfield','core','mail',NULL),('mail_encoding','8bit','textfield','core','mail',NULL),('mail_smtp_auth','','combo-boolean','core','mail',NULL),('mail_smtp_autotls','1','combo-boolean','core','mail',NULL),('mail_smtp_helo','','textfield','core','mail',NULL),('mail_smtp_hosts','localhost','textfield','core','mail',NULL),('mail_smtp_keepalive','','combo-boolean','core','mail',NULL),('mail_smtp_pass','','text-password','core','mail',NULL),('mail_smtp_port','587','numberfield','core','mail',NULL),('mail_smtp_secure','','textfield','core','mail',NULL),('mail_smtp_single_to','','combo-boolean','core','mail',NULL),('mail_smtp_timeout','10','numberfield','core','mail',NULL),('mail_smtp_user','','textfield','core','mail',NULL),('mail_use_smtp','','combo-boolean','core','mail',NULL),('main_nav_parent','topnav','textfield','core','manager',NULL),('manager_date_format','Y-m-d','textfield','core','manager',NULL),('manager_datetime_empty_value','—','textfield','core','manager',NULL),('manager_datetime_separator',', ','textfield','core','manager',NULL),('manager_direction','ltr','textfield','core','language',NULL),('manager_favicon_url','favicon.ico','textfield','core','manager',NULL),('manager_login_url_alternate','','textfield','core','authentication',NULL),('manager_logo','','textfield','core','manager',NULL),('manager_theme','default','modx-combo-manager-theme','core','manager',NULL),('manager_time_format','H:i','textfield','core','manager',NULL),('manager_tooltip_delay','2300','numberfield','core','manager',NULL),('manager_tooltip_enable','1','combo-boolean','core','manager',NULL),('manager_use_fullname','','combo-boolean','core','manager',NULL),('manager_week_start','0','numberfield','core','manager',NULL),('mgr_source_icon','icon-folder-open-o','textfield','core','manager',NULL),('mgr_tree_icon_context','tree-context','textfield','core','manager',NULL),('modx_browser_default_sort','name','textfield','core','manager',NULL),('modx_browser_default_viewmode','grid','textfield','core','manager',NULL),('modx_browser_tree_hide_files','1','combo-boolean','core','manager',NULL),('modx_browser_tree_hide_tooltips','1','combo-boolean','core','manager',NULL),('modx_charset','UTF-8','modx-combo-charset','core','language',NULL),('package_installer_at_top','1','combo-boolean','core','manager',NULL),('parser_recurse_uncacheable','1','combo-boolean','core','system',NULL),('password_generated_length','10','numberfield','core','authentication',NULL),('password_min_length','8','numberfield','core','authentication',NULL),('passwordless_activated','','combo-boolean','core','authentication',NULL),('passwordless_expiration','3600','textfield','core','authentication',NULL),('phpthumb_allow_src_above_docroot','','combo-boolean','core','phpthumb',NULL),('phpthumb_cache_maxage','30','numberfield','core','phpthumb',NULL),('phpthumb_cache_maxfiles','10000','numberfield','core','phpthumb',NULL),('phpthumb_cache_maxsize','100','numberfield','core','phpthumb',NULL),('phpthumb_cache_source_enabled','','combo-boolean','core','phpthumb',NULL),('phpthumb_document_root','','textfield','core','phpthumb',NULL),('phpthumb_error_bgcolor','CCCCFF','textfield','core','phpthumb',NULL),('phpthumb_error_fontsize','1','numberfield','core','phpthumb',NULL),('phpthumb_error_textcolor','FF0000','textfield','core','phpthumb',NULL),('phpthumb_far','C','textfield','core','phpthumb',NULL),('phpthumb_imagemagick_path','','textfield','core','phpthumb',NULL),('phpthumb_nohotlink_enabled','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nohotlink_erase_image','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nohotlink_text_message','Off-server thumbnailing is not allowed','textfield','core','phpthumb',NULL),('phpthumb_nohotlink_valid_domains','{http_host}','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_enabled','','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_erase_image','1','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_require_refer','','combo-boolean','core','phpthumb',NULL),('phpthumb_nooffsitelink_text_message','Off-server linking is not allowed','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_valid_domains','{http_host}','textfield','core','phpthumb',NULL),('phpthumb_nooffsitelink_watermark_src','','textfield','core','phpthumb',NULL),('phpthumb_zoomcrop','0','textfield','core','phpthumb',NULL),('preserve_menuindex','','combo-boolean','core','manager',NULL),('principal_targets','MODX\\Revolution\\modAccessContext,MODX\\Revolution\\modAccessResourceGroup,MODX\\Revolution\\modAccessCategory,MODX\\Revolution\\Sources\\modAccessMediaSource,MODX\\Revolution\\modAccessNamespace','textfield','core','authentication',NULL),('proxy_auth_type','BASIC','textfield','core','proxy',NULL),('proxy_host','','textfield','core','proxy',NULL),('proxy_password','','text-password','core','proxy',NULL),('proxy_port','','numberfield','core','proxy',NULL),('proxy_username','','textfield','core','proxy',NULL),('publish_default','','combo-boolean','core','site',NULL),('quick_search_in_content','1','combo-boolean','core','manager',NULL),('quick_search_result_max','10','numberfield','core','manager',NULL),('request_controller','index.php','textfield','core','gateway',NULL),('request_method_strict','','combo-boolean','core','gateway',NULL),('request_param_alias','q','textfield','core','gateway',NULL),('request_param_id','id','textfield','core','gateway',NULL),('resource_static_allow_absolute','0','combo-boolean','core','static_resources',NULL),('resource_static_path','{assets_path}','textfield','core','static_resources',NULL),('resource_tree_node_name','pagetitle','textfield','core','manager',NULL),('resource_tree_node_name_fallback','alias','textfield','core','manager',NULL),('resource_tree_node_tooltip','','textfield','core','manager',NULL),('richtext_default','1','combo-boolean','core','manager',NULL),('search_default','1','combo-boolean','core','site',NULL),('send_poweredby_header','1','combo-boolean','core','system','2025-01-17 14:15:02'),('server_offset_time','0','numberfield','core','system',NULL),('session_cookie_domain','','textfield','core','session',NULL),('session_cookie_httponly','1','combo-boolean','core','session',NULL),('session_cookie_lifetime','604800','numberfield','core','session',NULL),('session_cookie_path','','textfield','core','session',NULL),('session_cookie_samesite','','textfield','core','session',NULL),('session_cookie_secure','','combo-boolean','core','session',NULL),('session_gc_maxlifetime','604800','textfield','core','session',NULL),('session_handler_class','MODX\\Revolution\\modSessionHandler','textfield','core','session',NULL),('session_name','','textfield','core','session',NULL),('set_header','1','combo-boolean','core','system',NULL),('settings_distro','traditional','textfield','core','system',NULL),('settings_version','3.1.0-pl','textfield','core','system',NULL),('show_tv_categories_header','1','combo-boolean','core','manager',NULL),('site_name','MODX Revolution','textfield','core','site',NULL),('site_start','1','numberfield','core','site',NULL),('site_status','1','combo-boolean','core','site',NULL),('site_unavailable_message','[[%site_unavailable_message]]','textfield','core','site',NULL),('site_unavailable_page','0','numberfield','core','site',NULL),('static_elements_automate_chunks','','combo-boolean','core','static_elements',NULL),('static_elements_automate_plugins','','combo-boolean','core','static_elements',NULL),('static_elements_automate_snippets','','combo-boolean','core','static_elements',NULL),('static_elements_automate_templates','','combo-boolean','core','static_elements',NULL),('static_elements_automate_tvs','','combo-boolean','core','static_elements',NULL),('static_elements_basepath','','textfield','core','static_elements',NULL),('static_elements_default_category','0','modx-combo-category','core','static_elements',NULL),('static_elements_default_mediasource','0','modx-combo-source','core','static_elements',NULL),('static_elements_html_extension','.tpl','textfield','core','static_elements',NULL),('symlink_merge_fields','1','combo-boolean','core','site',NULL),('syncsite_default','1','combo-boolean','core','caching',NULL),('topmenu_show_descriptions','1','combo-boolean','core','manager',NULL),('tree_default_sort','menuindex','textfield','core','manager',NULL),('tree_root_id','0','numberfield','core','manager',NULL),('tvs_below_content','','combo-boolean','core','manager',NULL),('unauthorized_page','1','numberfield','core','site',NULL),('upload_file_exists','1','combo-boolean','core','file',NULL),('upload_files','aac,au,avi,bmp,css,css.map,doc,docx,eot,gif,gz,htm,html,ico,jpeg,jpg,js,js.map,less,md,mp3,mp4,mpeg,mpg,odb,odf,odg,odp,ods,odt,pdf,png,ppt,pptx,psd,rar,scss,svg,svgz,tar,tgz,tiff,ttf,txt,wav,webp,wmv,woff,woff2,xls,xlsx,xml,z,zip','textfield','core','file',NULL),('upload_maxsize','52428800','numberfield','core','file','2025-01-17 14:15:02'),('upload_translit','1','combo-boolean','core','file',NULL),('upload_translit_restrict_chars_pattern','/[\\0\\x0B\\t\\n\\r\\f\\a&=+%#<>\"~:`@\\?\\[\\]\\{\\}\\|\\^\'\\\\]/','textfield','core','file',NULL),('use_alias_path','1','combo-boolean','core','furls','2025-01-17 14:28:11'),('use_context_resource_table','1','combo-boolean','core','caching',NULL),('use_editor','1','combo-boolean','core','editor',NULL),('use_frozen_parent_uris','1','combo-boolean','core','furls','2025-01-17 14:28:17'),('use_multibyte','1','combo-boolean','core','language','2025-01-17 14:15:02'),('use_weblink_target','','combo-boolean','core','site',NULL),('user_nav_parent','usernav','textfield','core','manager',NULL),('welcome_action','welcome','textfield','core','manager',NULL),('welcome_namespace','core','textfield','core','manager',NULL),('welcome_screen','','combo-boolean','core','manager','2025-01-17 14:15:15'),('welcome_screen_url','//misc.modx.com/revolution/welcome.31.html','textfield','core','manager',NULL),('which_editor','','modx-combo-rte','core','editor',NULL),('which_element_editor','','modx-combo-rte','core','editor',NULL),('xhtml_urls','1','combo-boolean','core','site',NULL);
 /*!40000 ALTER TABLE `modx_system_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1933,7 +1936,7 @@ DROP TABLE IF EXISTS `modx_transport_packages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_transport_packages` (
-  `signature` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `signature` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `installed` datetime DEFAULT NULL,
@@ -1941,15 +1944,15 @@ CREATE TABLE `modx_transport_packages` (
   `workspace` int unsigned NOT NULL DEFAULT '0',
   `provider` int unsigned NOT NULL DEFAULT '0',
   `disabled` tinyint unsigned NOT NULL DEFAULT '0',
-  `source` tinytext COLLATE utf8mb4_unicode_ci,
-  `manifest` text COLLATE utf8mb4_unicode_ci,
-  `attributes` mediumtext COLLATE utf8mb4_unicode_ci,
-  `package_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `metadata` text COLLATE utf8mb4_unicode_ci,
+  `source` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `manifest` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `attributes` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `package_name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `metadata` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `version_major` smallint unsigned NOT NULL DEFAULT '0',
   `version_minor` smallint unsigned NOT NULL DEFAULT '0',
   `version_patch` smallint unsigned NOT NULL DEFAULT '0',
-  `release` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `release` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `release_index` smallint unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`signature`),
   KEY `workspace` (`workspace`),
@@ -1970,6 +1973,7 @@ CREATE TABLE `modx_transport_packages` (
 
 LOCK TABLES `modx_transport_packages` WRITE;
 /*!40000 ALTER TABLE `modx_transport_packages` DISABLE KEYS */;
+INSERT INTO `modx_transport_packages` VALUES ('translit-1.0.0-beta','2025-01-17 14:24:43','2025-01-17 14:29:24','2025-01-17 14:29:24',0,1,1,0,'translit-1.0.0-beta.transport.zip',NULL,'a:7:{s:7:\"license\";s:15218:\"GNU GENERAL PUBLIC LICENSE\n   Version 2, June 1991\n--------------------------\n\nCopyright (C) 1989, 1991 Free Software Foundation, Inc.\n59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n\nEveryone is permitted to copy and distribute verbatim copies\nof this license document, but changing it is not allowed.\n\nPreamble\n--------\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicense is intended to guarantee your freedom to share and change free\nsoftware--to make sure the software is free for all its users.  This\nGeneral Public License applies to most of the Free Software\nFoundation\'s software and to any other program whose authors commit to\nusing it.  (Some other Free Software Foundation software is covered by\nthe GNU Library General Public License instead.)  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthis service if you wish), that you receive source code or can get it\nif you want it, that you can change the software or use pieces of it\nin new free programs; and that you know you can do these things.\n\n  To protect your rights, we need to make restrictions that forbid\nanyone to deny you these rights or to ask you to surrender the rights.\nThese restrictions translate to certain responsibilities for you if you\ndistribute copies of the software, or if you modify it.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must give the recipients all the rights that\nyou have.  You must make sure that they, too, receive or can get the\nsource code.  And you must show them these terms so they know their\nrights.\n\n  We protect your rights with two steps: (1) copyright the software, and\n(2) offer you this license which gives you legal permission to copy,\ndistribute and/or modify the software.\n\n  Also, for each author\'s protection and ours, we want to make certain\nthat everyone understands that there is no warranty for this free\nsoftware.  If the software is modified by someone else and passed on, we\nwant its recipients to know that what they have is not the original, so\nthat any problems introduced by others will not reflect on the original\nauthors\' reputations.\n\n  Finally, any free program is threatened constantly by software\npatents.  We wish to avoid the danger that redistributors of a free\nprogram will individually obtain patent licenses, in effect making the\nprogram proprietary.  To prevent this, we have made it clear that any\npatent must be licensed for everyone\'s free use or not licensed at all.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n\nGNU GENERAL PUBLIC LICENSE\nTERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n---------------------------------------------------------------\n\n  0. This License applies to any program or other work which contains\na notice placed by the copyright holder saying it may be distributed\nunder the terms of this General Public License.  The \"Program\", below,\nrefers to any such program or work, and a \"work based on the Program\"\nmeans either the Program or any derivative work under copyright law:\nthat is to say, a work containing the Program or a portion of it,\neither verbatim or with modifications and/or translated into another\nlanguage.  (Hereinafter, translation is included without limitation in\nthe term \"modification\".)  Each licensee is addressed as \"you\".\n\nActivities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning the Program is not restricted, and the output from the Program\nis covered only if its contents constitute a work based on the\nProgram (independent of having been made by running the Program).\nWhether that is true depends on what the Program does.\n\n  1. You may copy and distribute verbatim copies of the Program\'s\nsource code as you receive it, in any medium, provided that you\nconspicuously and appropriately publish on each copy an appropriate\ncopyright notice and disclaimer of warranty; keep intact all the\nnotices that refer to this License and to the absence of any warranty;\nand give any other recipients of the Program a copy of this License\nalong with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and\nyou may at your option offer warranty protection in exchange for a fee.\n\n  2. You may modify your copy or copies of the Program or any portion\nof it, thus forming a work based on the Program, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:\n\n    a) You must cause the modified files to carry prominent notices\n    stating that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in\n    whole or in part contains or is derived from the Program or any\n    part thereof, to be licensed as a whole at no charge to all third\n    parties under the terms of this License.\n\n    c) If the modified program normally reads commands interactively\n    when run, you must cause it, when started running for such\n    interactive use in the most ordinary way, to print or display an\n    announcement including an appropriate copyright notice and a\n    notice that there is no warranty (or else, saying that you provide\n    a warranty) and that users may redistribute the program under\n    these conditions, and telling the user how to view a copy of this\n    License.  (Exception: if the Program itself is interactive but\n    does not normally print such an announcement, your work based on\n    the Program is not required to print an announcement.)\n\nThese requirements apply to the modified work as a whole.  If\nidentifiable sections of that work are not derived from the Program,\nand can be reasonably considered independent and separate works in\nthemselves, then this License, and its terms, do not apply to those\nsections when you distribute them as separate works.  But when you\ndistribute the same sections as part of a whole which is a work based\non the Program, the distribution of the whole must be on the terms of\nthis License, whose permissions for other licensees extend to the\nentire whole, and thus to each and every part regardless of who wrote it.\n\nThus, it is not the intent of this section to claim rights or contest\nyour rights to work written entirely by you; rather, the intent is to\nexercise the right to control the distribution of derivative or\ncollective works based on the Program.\n\nIn addition, mere aggregation of another work not based on the Program\nwith the Program (or with a work based on the Program) on a volume of\na storage or distribution medium does not bring the other work under\nthe scope of this License.\n\n  3. You may copy and distribute the Program (or a work based on it,\nunder Section 2) in object code or executable form under the terms of\nSections 1 and 2 above provided that you also do one of the following:\n\n    a) Accompany it with the complete corresponding machine-readable\n    source code, which must be distributed under the terms of Sections\n    1 and 2 above on a medium customarily used for software interchange; or,\n\n    b) Accompany it with a written offer, valid for at least three\n    years, to give any third party, for a charge no more than your\n    cost of physically performing source distribution, a complete\n    machine-readable copy of the corresponding source code, to be\n    distributed under the terms of Sections 1 and 2 above on a medium\n    customarily used for software interchange; or,\n\n    c) Accompany it with the information you received as to the offer\n    to distribute corresponding source code.  (This alternative is\n    allowed only for noncommercial distribution and only if you\n    received the program in object code or executable form with such\n    an offer, in accord with Subsection b above.)\n\nThe source code for a work means the preferred form of the work for\nmaking modifications to it.  For an executable work, complete source\ncode means all the source code for all modules it contains, plus any\nassociated interface definition files, plus the scripts used to\ncontrol compilation and installation of the executable.  However, as a\nspecial exception, the source code distributed need not include\nanything that is normally distributed (in either source or binary\nform) with the major components (compiler, kernel, and so on) of the\noperating system on which the executable runs, unless that component\nitself accompanies the executable.\n\nIf distribution of executable or object code is made by offering\naccess to copy from a designated place, then offering equivalent\naccess to copy the source code from the same place counts as\ndistribution of the source code, even though third parties are not\ncompelled to copy the source along with the object code.\n\n  4. You may not copy, modify, sublicense, or distribute the Program\nexcept as expressly provided under this License.  Any attempt\notherwise to copy, modify, sublicense or distribute the Program is\nvoid, and will automatically terminate your rights under this License.\nHowever, parties who have received copies, or rights, from you under\nthis License will not have their licenses terminated so long as such\nparties remain in full compliance.\n\n  5. You are not required to accept this License, since you have not\nsigned it.  However, nothing else grants you permission to modify or\ndistribute the Program or its derivative works.  These actions are\nprohibited by law if you do not accept this License.  Therefore, by\nmodifying or distributing the Program (or any work based on the\nProgram), you indicate your acceptance of this License to do so, and\nall its terms and conditions for copying, distributing or modifying\nthe Program or works based on it.\n\n  6. Each time you redistribute the Program (or any work based on the\nProgram), the recipient automatically receives a license from the\noriginal licensor to copy, distribute or modify the Program subject to\nthese terms and conditions.  You may not impose any further\nrestrictions on the recipients\' exercise of the rights granted herein.\nYou are not responsible for enforcing compliance by third parties to\nthis License.\n\n  7. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues),\nconditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot\ndistribute so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you\nmay not distribute the Program at all.  For example, if a patent\nlicense would not permit royalty-free redistribution of the Program by\nall those who receive copies directly or indirectly through you, then\nthe only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Program.\n\nIf any portion of this section is held invalid or unenforceable under\nany particular circumstance, the balance of the section is intended to\napply and the section as a whole is intended to apply in other\ncircumstances.\n\nIt is not the purpose of this section to induce you to infringe any\npatents or other property right claims or to contest validity of any\nsuch claims; this section has the sole purpose of protecting the\nintegrity of the free software distribution system, which is\nimplemented by public license practices.  Many people have made\ngenerous contributions to the wide range of software distributed\nthrough that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing\nto distribute software through any other system and a licensee cannot\nimpose that choice.\n\nThis section is intended to make thoroughly clear what is believed to\nbe a consequence of the rest of this License.\n\n  8. If the distribution and/or use of the Program is restricted in\ncertain countries either by patents or by copyrighted interfaces, the\noriginal copyright holder who places the Program under this License\nmay add an explicit geographical distribution limitation excluding\nthose countries, so that distribution is permitted only in or among\ncountries not thus excluded.  In such case, this License incorporates\nthe limitation as if written in the body of this License.\n\n  9. The Free Software Foundation may publish revised and/or new versions\nof the General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\nEach version is given a distinguishing version number.  If the Program\nspecifies a version number of this License which applies to it and \"any\nlater version\", you have the option of following the terms and conditions\neither of that version or of any later version published by the Free\nSoftware Foundation.  If the Program does not specify a version number of\nthis License, you may choose any version ever published by the Free Software\nFoundation.\n\n  10. If you wish to incorporate parts of the Program into other free\nprograms whose distribution conditions are different, write to the author\nto ask for permission.  For software which is copyrighted by the Free\nSoftware Foundation, write to the Free Software Foundation; we sometimes\nmake exceptions for this.  Our decision will be guided by the two goals\nof preserving the free status of all derivatives of our free software and\nof promoting the sharing and reuse of software generally.\n\nNO WARRANTY\n-----------\n\n  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\nFOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\nOTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\nPROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\nTO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\nPROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\nREPAIR OR CORRECTION.\n\n  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\nREDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\nINCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\nOUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\nTO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\nYOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\nPROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\n---------------------------\nEND OF TERMS AND CONDITIONS\";s:6:\"readme\";s:453:\"--------------------\nExtension: translit\n--------------------\nVersion: 1.0.0-beta\nReleased: October 20, 2010\nSince: October 20, 2010\nAuthor: Jason Coward <jason@modx.com>\n\nA MODx Revolution Core Extension, the translit package provides a custom transliteration service class. When installed,\nthis is automatically available for the core Friendly URL alias transliteration process for Resources. You can also use\nthe service in your plugins and snippets.\";s:9:\"signature\";s:19:\"translit-1.0.0-beta\";s:6:\"action\";s:26:\"Workspace/Packages/Install\";s:8:\"register\";s:3:\"mgr\";s:5:\"topic\";s:47:\"/workspace/package/install/translit-1.0.0-beta/\";s:14:\"package_action\";i:0;}','translit','a:38:{s:2:\"id\";s:36:\"99066779-e494-4d6a-b6d9-98937c2b7ed8\";s:7:\"package\";s:36:\"9906672b-1666-4b4d-9324-bfe3ccd1ec0c\";s:12:\"display_name\";s:19:\"translit-1.0.0-beta\";s:4:\"name\";s:8:\"translit\";s:7:\"version\";s:5:\"1.0.0\";s:13:\"version_major\";s:1:\"1\";s:13:\"version_minor\";s:1:\"0\";s:13:\"version_patch\";s:1:\"0\";s:7:\"release\";s:4:\"beta\";s:8:\"vrelease\";s:4:\"beta\";s:14:\"vrelease_index\";s:0:\"\";s:6:\"author\";s:8:\"opengeek\";s:11:\"description\";s:585:\"<p>A service class that allows custom transliteration tables to be used when auto-creating or sanitizing friendly URL aliases in MODx Revolution. This initial beta release includes three tables that can be specified as the friendly_alias_translit System Setting:</p>\n<p><ol>\n<li>noaccents</li>\n<li>russian</li>\n<li>german</li>\n</ol>\nCustom named transliteration tables can be manually added to the {core_path}components/translit/model/modx/translit/tables/ directory and configured. Additional contributed transliteration tables will be included in future releases of the package.\n</p>\";s:12:\"instructions\";s:37:\"<p>Install via Package Management</p>\";s:9:\"changelog\";s:0:\"\";s:9:\"createdon\";s:25:\"2010-10-20T11:53:35+00:00\";s:9:\"createdby\";s:8:\"opengeek\";s:8:\"editedon\";s:25:\"2023-05-04T19:22:07+00:00\";s:10:\"releasedon\";s:25:\"2010-10-20T11:57:11+00:00\";s:9:\"downloads\";s:6:\"223254\";s:8:\"approved\";s:4:\"true\";s:7:\"audited\";s:4:\"true\";s:8:\"featured\";s:5:\"false\";s:10:\"deprecated\";s:5:\"false\";s:7:\"license\";s:5:\"GPLv2\";s:7:\"smf_url\";s:0:\"\";s:10:\"repository\";s:36:\"9861b09b-7176-455b-a9c1-bb7728924ad8\";s:8:\"supports\";s:3:\"2.0\";s:8:\"location\";s:120:\"https://rest.modx.com/extras/download/?id=99066779-e494-4d6a-b6d9-98937c2b7ed8&uuid=8ec3dac1-c90b-4457-afa1-b0ad813c2051\";s:9:\"signature\";s:19:\"translit-1.0.0-beta\";s:11:\"supports_db\";s:0:\"\";s:16:\"minimum_supports\";s:3:\"2.0\";s:9:\"breaks_at\";s:5:\"100.0\";s:10:\"screenshot\";s:0:\"\";s:4:\"file\";a:7:{s:2:\"id\";s:36:\"99066779-e494-4d6a-b6d9-98937c2b7ed8\";s:7:\"version\";s:36:\"99066779-e494-4d6a-b6d9-98937c2b7ed8\";s:8:\"filename\";s:33:\"translit-1.0.0-beta.transport.zip\";s:9:\"downloads\";s:6:\"223399\";s:6:\"lastip\";s:12:\"94.46.148.31\";s:9:\"transport\";s:4:\"true\";s:8:\"location\";s:120:\"https://rest.modx.com/extras/download/?id=99066779-e494-4d6a-b6d9-98937c2b7ed8&uuid=8ec3dac1-c90b-4457-afa1-b0ad813c2051\";}s:17:\"package-signature\";s:19:\"translit-1.0.0-beta\";s:10:\"categories\";s:36:\"internationalization,core-extensions\";s:4:\"tags\";s:15:\"transliteration\";}',1,0,0,'beta',0);
 /*!40000 ALTER TABLE `modx_transport_packages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1982,16 +1986,16 @@ DROP TABLE IF EXISTS `modx_transport_providers`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_transport_providers` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` mediumtext COLLATE utf8mb4_unicode_ci,
-  `service_url` tinytext COLLATE utf8mb4_unicode_ci,
-  `username` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `api_key` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `service_url` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `username` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `api_key` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `created` datetime NOT NULL,
   `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   `priority` tinyint NOT NULL DEFAULT '10',
-  `properties` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `properties` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `api_key` (`api_key`),
@@ -2021,10 +2025,10 @@ DROP TABLE IF EXISTS `modx_user_attributes`;
 CREATE TABLE `modx_user_attributes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `internalKey` int unsigned NOT NULL,
-  `fullname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `phone` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `mobilephone` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `fullname` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `phone` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `mobilephone` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `blocked` tinyint unsigned NOT NULL DEFAULT '0',
   `blockeduntil` int NOT NULL DEFAULT '0',
   `blockedafter` int NOT NULL DEFAULT '0',
@@ -2032,19 +2036,19 @@ CREATE TABLE `modx_user_attributes` (
   `lastlogin` int NOT NULL DEFAULT '0',
   `thislogin` int NOT NULL DEFAULT '0',
   `failedlogincount` int NOT NULL DEFAULT '0',
-  `sessionid` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `sessionid` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `dob` int NOT NULL DEFAULT '0',
   `gender` tinyint(1) NOT NULL DEFAULT '0',
-  `address` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `country` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `state` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `zip` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `fax` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `photo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `comment` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `website` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `extended` text COLLATE utf8mb4_unicode_ci,
+  `address` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `city` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `state` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `zip` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `fax` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `photo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `comment` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `website` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `extended` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `internalKey` (`internalKey`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -2056,7 +2060,7 @@ CREATE TABLE `modx_user_attributes` (
 
 LOCK TABLES `modx_user_attributes` WRITE;
 /*!40000 ALTER TABLE `modx_user_attributes` DISABLE KEYS */;
-INSERT INTO `modx_user_attributes` VALUES (1,1,'Администратор по умолчанию','denis_danilov_97@mail.ru','','',0,0,0,1,0,1737123315,0,'n8gg56cc4cf0s4nv728gdebc3a',0,0,'','','','','','','','','',NULL);
+INSERT INTO `modx_user_attributes` VALUES (1,1,'Администратор по умолчанию','denis_danilov_97@mail.ru','','',0,0,0,2,1737123315,1737123805,0,'hd7ddkhevua35qukcf714aa0qf',0,0,'','','','','','','','','',NULL);
 /*!40000 ALTER TABLE `modx_user_attributes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2069,8 +2073,8 @@ DROP TABLE IF EXISTS `modx_user_group_roles`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_user_group_roles` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` mediumtext COLLATE utf8mb4_unicode_ci,
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `authority` int unsigned NOT NULL DEFAULT '9999',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
@@ -2097,11 +2101,11 @@ DROP TABLE IF EXISTS `modx_user_group_settings`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_user_group_settings` (
   `group` int unsigned NOT NULL DEFAULT '0',
-  `key` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `value` text COLLATE utf8mb4_unicode_ci,
-  `xtype` varchar(75) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `area` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `key` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `xtype` varchar(75) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `area` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editedon` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`group`,`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -2125,9 +2129,9 @@ DROP TABLE IF EXISTS `modx_user_messages`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_user_messages` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `type` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `subject` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `subject` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `message` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `sender` int unsigned NOT NULL DEFAULT '0',
   `recipient` int unsigned NOT NULL DEFAULT '0',
   `private` tinyint NOT NULL DEFAULT '0',
@@ -2155,11 +2159,11 @@ DROP TABLE IF EXISTS `modx_user_settings`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_user_settings` (
   `user` int unsigned NOT NULL DEFAULT '0',
-  `key` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `value` text COLLATE utf8mb4_unicode_ci,
-  `xtype` varchar(75) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
-  `namespace` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
-  `area` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `key` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `xtype` varchar(75) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'textfield',
+  `namespace` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'core',
+  `area` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `editedon` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`user`,`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -2183,17 +2187,17 @@ DROP TABLE IF EXISTS `modx_users`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_users` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `cachepwd` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `class_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modUser',
+  `username` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `cachepwd` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `class_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\modUser',
   `active` tinyint unsigned NOT NULL DEFAULT '1',
-  `remote_key` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `remote_data` text COLLATE utf8mb4_unicode_ci,
-  `hash_class` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\Hashing\\modNative',
-  `salt` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `remote_key` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `remote_data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `hash_class` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'MODX\\Revolution\\Hashing\\modNative',
+  `salt` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `primary_group` int unsigned NOT NULL DEFAULT '0',
-  `session_stale` text COLLATE utf8mb4_unicode_ci,
+  `session_stale` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `sudo` tinyint unsigned NOT NULL DEFAULT '0',
   `createdon` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -2223,11 +2227,11 @@ DROP TABLE IF EXISTS `modx_workspaces`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `modx_workspaces` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `path` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `path` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `created` datetime NOT NULL,
   `active` tinyint unsigned NOT NULL DEFAULT '0',
-  `attributes` mediumtext COLLATE utf8mb4_unicode_ci,
+  `attributes` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `path` (`path`),
   KEY `name` (`name`),
@@ -2254,4 +2258,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-01-17 14:18:54
+-- Dump completed on 2025-01-17 14:31:56
